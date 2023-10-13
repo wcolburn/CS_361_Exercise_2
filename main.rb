@@ -1,5 +1,4 @@
 
-
 # Mangle the name by reversing it or borgifying it
 def modified_name(name, appendBorg)
   split_name = name.split
@@ -15,5 +14,10 @@ def modified_name(name, appendBorg)
   name
 end
 
-puts "New name: #{modified_name("Johanna Jackson",false)}"
-puts "New borg name: #{modified_name("Johanna Jackson",true)}"
+def borg_name(name)
+  name << " Borg"
+end
+
+@name = "Johanna Jackson"
+puts "New name: #{modified_name(@name,false)}"
+puts "New borg name: #{borg_name(@name)}"
