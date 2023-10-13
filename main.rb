@@ -1,5 +1,3 @@
-
-# Mangle the name by reversing it or borgifying it
 def create_reversed_name(name)
   split_name = name.split
   reversed_name_components = split_name.reverse
